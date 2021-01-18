@@ -29,10 +29,9 @@ export class DogsController{
         
         return 'update dog'+params.id
     }
+
     @Delete(':id')
      async delete(@Param() params){ 
         this.dogService.delete(params.id);
     }
-
-    
 }
